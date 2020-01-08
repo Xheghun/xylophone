@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
+  //function to create flexible button whilst reducing code repetition
   Expanded buildExpandedButton({Color color, int soundNum}) {
     return Expanded(
       child: RaisedButton(
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
+  //function to play audio file using a third party library
   void playSound(String audioFile) {
     final player = AudioCache();
     player.play(audioFile);
